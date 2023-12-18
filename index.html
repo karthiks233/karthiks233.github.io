@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='mediaqueries.css') }}" />
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -39,30 +38,32 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="{{ url_for('static', filename='assets/1.jpeg') }}" alt="John Doe profile picture" />
+        <img src="/1.jpeg" alt="John Doe profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Karthik Raja</h1>
         <p class="section__text__p2">Data Analyst/Data Engineer</p>
         <div class="btn-container">
-          <button class="btn btn-color-2" 
-          onclick="window.open('{{ url_for('static', filename='assets/KarthikRaja_Resume.pdf') }}')">
-          Download CV</button>
-
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/KarthikRaja_Resume.pdf')"
+          >
+            Download CV
+          </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
           <img
-            src="{{ url_for('static', filename='assets/linkedin.png') }}"
+            src="/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
             onclick="location.href='https://linkedin.com/in/karthik-raja-b22459171/'"
           />
           <img
-            src="{{ url_for('static', filename='assets/github.png') }}"
+            src="/github.png"
             alt="My Github profile"
             class="icon"
             onclick="location.href='https://github.com/karthiks233/'"
@@ -75,17 +76,17 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <!-- <img
-            src="./assets/1.jpeg"
+          <img
+            src="/1.jpeg"
             alt="Profile picture"
             class="about-pic"
-          /> -->
+          />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="{{ url_for('static', filename='assets/experience.png') }}"
+                src="/experience.png"
                 alt="Experience icon"
                 class="icon"
               />
@@ -94,7 +95,7 @@
             </div>
             <div class="details-container">
               <img
-                src="{{ url_for('static', filename='assets/education.png') }}"
+                src="/education.png"
                 alt="Education icon"
                 class="icon"
               />
@@ -113,7 +114,7 @@
         </div>
       </div>
       <img
-        src="{{ url_for('static', filename='assets/arrow.png') }}"
+        src="/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#experience'"
@@ -129,7 +130,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -140,7 +141,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -151,7 +152,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -162,7 +163,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -173,7 +174,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -184,7 +185,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -200,7 +201,7 @@
             <div class="article-container">
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -211,7 +212,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -222,7 +223,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -233,7 +234,7 @@
               </article>
               <article>
                 <img
-                  src="{{ url_for('static', filename='assets/checkmark.png') }}"
+                  src="/checkmark.png"
                   alt="Experience icon"
                   class="icon"
                 />
@@ -247,7 +248,7 @@
         </div>
       </div>
       <img
-        src="{{ url_for('static', filename='assets/arrow.png') }}"
+        src="/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
@@ -261,7 +262,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="{{ url_for('static', filename='assets/H1B.png') }}"
+                src="/H1B.png"
                 alt="Project 1"
                 class="project-img"
               />
@@ -285,7 +286,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="{{ url_for('static', filename='assets/TwitterSentiment.png') }}"
+                src="/TwitterSentiment.png"
                 alt="Project 2"
                 class="project-img"
               />
@@ -298,28 +299,18 @@
               >
                 Github
               </button>
-              <!-- <button
+              <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/karthiks233/TwitterAnalysis'"
               >
                 Live Demo
-              </button> -->
+              </button>
             </div>
-            <h2></h2>
-            <form onsubmit="result(); return false;" method="post" >
-              <h4> <b>Try it:</b> </h4>
-              <label for="text"></label>
-              <input type="text" id="text" name="text">
-              <input type="submit" value="Submit">
-            </form>
-            
-            <p>{{result}}<span id="result"></span></p>
-            
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="{{ url_for('static', filename='assets/yoha.jpeg') }}"
+                src="/yoha.jpeg"
                 alt="Project 3"
                 class="project-img"
               />
@@ -343,7 +334,7 @@
         </div>
       </div>
       <img
-        src="{{ url_for('static', filename='assets/arrow.png') }}"
+        src="/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#contact'"
@@ -355,7 +346,7 @@
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
-            src="{{ url_for('static', filename='assets/email.png') }}"
+            src="/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
@@ -363,7 +354,7 @@
         </div>
         <div class="contact-info-container">
           <img
-            src="{{ url_for('static', filename='assets/linkedin.png') }}"
+            src="/linkedin.png"
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
@@ -384,9 +375,6 @@
       </nav>
       <p>Copyright &#169; 2023 Karthik Raja. All Rights Reserved.</p>
     </footer>
-    <script src="/static/script.js"></script>
-    <!-- Add this line to include jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
+    <script src="script.js"></script>
   </body>
 </html>
