@@ -194,9 +194,23 @@ section {
   margin-bottom: 1rem;
 }
 
-.title {
+/* .title {
   font-size: 3rem;
   text-align: center;
+} */
+
+#profile .title {
+  font-size: 3rem;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s ease-in-out, color 1s ease-in-out;
+}
+
+#profile .title.visible {
+  opacity: 1;
+  transform: translateY(0);
+  color: red;
 }
 
 #socials-container {
