@@ -14,8 +14,7 @@ var logo = document.querySelector('#profile .title');
 
 // Add a class to make the logo visible with a transition
 // logo.classList.add('visible');
-
-  setTimeout(function () {
+ setTimeout(function () {
   logo.classList.add('visible');
 }, 500);
 
