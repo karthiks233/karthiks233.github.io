@@ -1,4 +1,3 @@
-
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -6,8 +5,16 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 // document.getElementById('result').innerText = '{{ result }}';
-document.addEventListener("DOMContentLoaded", function() {
-  // Run this function when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+    const words = ["Software", "Data", "Product", "Data", "Analytical", "AI", "ML", "Business Analytical"];
+    let index = 0;
+    const toggleWordEl = document.getElementById("toggle-word");
+
+    setInterval(() => {
+        index = (index + 1) % words.length;
+        toggleWordEl.textContent = words[index];
+    }, 1000);
+});
 
 // Get the logo element
 var logo = document.querySelector('#profile .title');
@@ -17,6 +24,4 @@ var logo = document.querySelector('#profile .title');
  setTimeout(function () {
   logo.classList.add('visible');
 }, 500);
-
-});
 
