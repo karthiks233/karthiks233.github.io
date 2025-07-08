@@ -444,3 +444,67 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
+/* Animaitions */
+
+@keyframes shakeX {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes shakeY {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-10px); }
+  40% { transform: translateY(10px); }
+  60% { transform: translateY(-10px); }
+  80% { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes zoom {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes fade {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes skew {
+  0%, 100% { transform: skew(0deg, 0deg); }
+  50% { transform: skew(20deg, 10deg); }
+}
+
+
+
+.crazy-shakeX {
+    animation: shakeX 0.5s ;
+  }
+  .crazy-shakeY {
+    animation: shakeY 0.5s ;
+  }
+  .crazy-spin {
+    animation: spin 2s linear infinite;
+  }
+  .crazy-zoom {
+    animation: zoom 1s ;
+  }
+  .crazy-fade {
+    animation: fade 2s ;
+  }
+  .crazy-skew {
+    animation: skew 1s ;
+  }
+  
