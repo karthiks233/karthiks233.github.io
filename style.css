@@ -244,53 +244,44 @@ section {
 }
 
 /* BUTTONS */
-
-.btn-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
+/* --- Base Button Styles (Unchanged) --- */
 .btn {
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
   border-radius: 2rem;
+  text-decoration: none; /* Make sure this is here to remove link underline */
+  outline: none;        /* Important for consistency */
 }
 
-.btn-color-1,
-.btn-color-2 {
+/* --- Color 1 (Solid Button: Contact Info & Download) --- */
+.btn-color-1 {
   border: rgb(53, 53, 53) 0.1rem solid;
-}
-
-.btn-color-1:hover,
-.btn-color-2:hover {
-  cursor: pointer;
-}
-
-.btn-color-1,
-.btn-color-2:hover {
   background: rgb(53, 53, 53);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(0, 0, 0); /* Darker black on hover */
+  border: rgb(255, 255, 255) 0.1rem solid; /* This will be your white border */
+  color: white; /* Ensure text remains white */
+  cursor: pointer;
 }
 
+/* --- Color 2 (Outline Button: Projects) --- */
 .btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid; /* Dark outline */
   background: none;
+  color: rgb(53, 53, 53); /* Dark text color */
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  border: rgb(255, 255, 255) 0.1rem solid; /* This is the white border on hover */
+  background: rgb(53, 53, 53); /* Solid dark background on hover */
+  color: white; /* White text on hover */
+  cursor: pointer;
 }
-
-.btn-container {
-  gap: 1rem;
-}
-
 /* ABOUT SECTION */
 
 #about {
