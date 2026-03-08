@@ -1,20 +1,15 @@
+import { NavLink } from 'react-router-dom';
 
-const Footer = () => {
-  return (
-    <footer>
-      <nav>
-        <div className="nav-links-container">
-          <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Karthik Raja. All Rights Reserved.</p>
-    </footer>
-  );
-};
+const Footer = () => (
+  <footer>
+    <nav>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/experience">Experience</NavLink>
+      <NavLink to="/projects">Projects</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
+    </nav>
+    <p>Copyright &copy; 2025 Karthik Raja. All Rights Reserved.</p>
+  </footer>
+);
 
 export default Footer;

@@ -1,46 +1,42 @@
-
 import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const [open, setOpen] = useState(false);
+  const close = () => setOpen(false);
 
   return (
-    <>
-      <nav id="desktop-nav">
-        {/* <div className="logo1">Karthik Raja</div> */}
-        <div>
-          <ul className="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+    <header className="navbar">
+      <NavLink to="/" className="nav-logo" onClick={close}>
+        Karthik Raja
+      </NavLink>
+
+      <nav className="nav-links-desktop">
+        <NavLink to="/about">About</NavLink>
+        <NavLink to="/experience">Experience</NavLink>
+        <NavLink to="/projects">Projects</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </nav>
-      <nav id="hamburger-nav">
-        {/* <div className="logo">Karthik Raja</div> */}
-        <div className="hamburger-menu">
-          <div 
-            className={`hamburger-icon ${isMenuOpen ? 'open' : ''}`} 
-            onClick={toggleMenu}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className={`menu-links ${isMenuOpen ? 'open' : ''}`}>
-            <li><a href="#about" onClick={toggleMenu}>About</a></li>
-            <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
-            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-            <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-          </div>
-        </div>
-      </nav>
-    </>
+
+      <button
+        className="hamburger"
+        onClick={() => setOpen(o => !o)}
+        aria-label="Toggle menu"
+      >
+        <span />
+        <span />
+        <span />
+      </button>
+
+      {open && (
+        <nav className="nav-links-mobile">
+          <NavLink to="/about" onClick={close}>About</NavLink>
+          <NavLink to="/experience" onClick={close}>Experience</NavLink>
+          <NavLink to="/projects" onClick={close}>Projects</NavLink>
+          <NavLink to="/contact" onClick={close}>Contact</NavLink>
+        </nav>
+      )}
+    </header>
   );
 };
 
