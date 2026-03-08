@@ -331,6 +331,42 @@ button { font-family: inherit; }
   font-weight: 500;
 }
 
+/* === ABOUT — ADDITIONAL SECTIONS === */
+.about-section {
+  margin-top: 3.5rem;
+}
+
+.about-section-body {
+  font-size: 0.9rem;
+  color: #444;
+  line-height: 1.85;
+}
+
+.about-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.about-mini-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.4rem;
+}
+
+.about-mini-card h4 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.about-mini-card p {
+  font-size: 0.825rem;
+  color: #555;
+  line-height: 1.75;
+}
+
 /* === EXPERIENCE PAGE === */
 .experience-page {
   max-width: 860px;

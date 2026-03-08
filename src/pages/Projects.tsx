@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: 'Finsights',
-    img: '/assets/DE.png',
+    img: '/assets/finsights-arch.png',
     description:
       'An end-to-end RAG platform over 15+ years of SEC 10-K filings for context-aware financial intelligence. Hybrid retrieval keeps hallucinations low, hitting sub-$0.02 per query at scale on AWS ECS.',
     tags: ['React', 'TypeScript', 'Python', 'FastAPI', 'AWS ECS', 'Kubernetes'],
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'Serverless Node.js on AWS ECS',
-    img: '/assets/DE.png',
+    img: '/assets/project-1.png',
     description:
       'Production-grade DevOps pipeline that containerizes a Node.js service and deploys it to AWS ECS Fargate — infrastructure provisioned with Terraform, config managed by Ansible, and zero-downtime rolling deploys via GitHub Actions CI/CD.',
     tags: ['Docker', 'Terraform', 'Ansible', 'AWS ECS', 'AWS ECR', 'GitHub Actions'],
@@ -51,7 +51,7 @@ const projects = [
   },
   {
     title: 'Nginx Log Analyser',
-    img: '/assets/DE.png',
+    img: '/assets/project-2.png',
     description:
       'Zero-dependency Bash/AWK script that parses Nginx access logs and surfaces the top-5 IPs, most-requested paths, and most-common HTTP status codes — runs on any Unix system without installing anything.',
     tags: ['Bash', 'AWK', 'Shell Scripting', 'DevOps'],

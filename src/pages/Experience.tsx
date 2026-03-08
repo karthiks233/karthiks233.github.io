@@ -1,33 +1,70 @@
 const workExperience = [
   {
     role: 'Software Developer',
-    company: 'Company Name · Full-time',
-    period: '2022 – Present',
+    company: 'Gold Star Foods · Full-time',
+    period: 'Jan 2025 – Present',
     bullets: [
-      'Designed and implemented automated data management processes within a large agile (SCRUM) environment, reducing manual effort significantly.',
-      'Built and optimized Power BI dashboards for real-time operational monitoring and decision-making support for senior leadership.',
-      'Developed and maintained ETL pipelines using Apache Airflow, integrating Snowflake and Databricks for scalable, reliable data processing.',
-      'Managed backlog grooming, sprint ceremonies, and cross-team stakeholder communications using JIRA and Confluence.',
+      'Building full-stack web applications on AWS using CDK (IaaC) with TypeScript and React.',
+      'Designing and provisioning cloud infrastructure — Lambda, API Gateway, DynamoDB, S3 — entirely through AWS CDK constructs.',
+      'Developing reusable React component libraries and TypeScript APIs for internal tooling and operational dashboards.',
+    ],
+  },
+  {
+    role: 'Process Improvement Intern',
+    company: 'American Family Insurance · Internship',
+    period: 'Jun 2024 – Dec 2024',
+    bullets: [
+      'Managed internal software product lifecycle using SDLC workflows across cross-functional engineering and design teams.',
+      'Automated design-to-development handoffs using Jira Automation, reducing manual coordination overhead by ~40%.',
+      'Facilitated sprint ceremonies and maintained Confluence documentation for product teams of 15+ stakeholders.',
+    ],
+  },
+  {
+    role: 'Network Engineer',
+    company: 'Tata Consultancy Services (TCS) · Full-time',
+    period: 'Jun 2021 – May 2023',
+    bullets: [
+      'Monitored remote router and IoT devices at scale using Bash scripts and cron-based alerting pipelines.',
+      'Built real-time performance and status dashboards to surface device health metrics for operations teams.',
+      'Automated log parsing and alert triage across distributed network infrastructure, reducing mean time to detect issues.',
+      'Developed and maintained ETL pipelines integrating Snowflake and Databricks for network telemetry data processing.',
+    ],
+  },
+  {
+    role: 'Electronics Engineering Intern',
+    company: 'Internship',
+    period: 'Jun 2019 – May 2021',
+    bullets: [
+      'Developed embedded systems and automation projects using Arduino and Raspberry Pi microcontrollers.',
+      'Designed PCB circuits and wrote firmware in C/C++ for sensor interfacing, actuator control, and data acquisition.',
     ],
   },
 ];
 
 const skillGroups = [
   {
-    label: 'Languages & Engineering',
-    skills: ['Python', 'SQL', 'PySpark / Spark', 'ETL Jobs', 'Git'],
+    label: 'Cloud & Infrastructure',
+    skills: ['AWS CDK', 'AWS Lambda', 'API Gateway', 'DynamoDB', 'S3', 'ECS', 'ECR', 'Terraform', 'Ansible'],
+  },
+  {
+    label: 'DevOps & MLOps',
+    skills: ['Docker', 'GitHub Actions', 'MLflow', 'CI/CD Pipelines'],
+  },
+  {
+    label: 'Languages & Frameworks',
+    skills: ['TypeScript', 'Python', 'React', 'Node.js', 'Bash', 'SQL', 'PySpark'],
   },
   {
     label: 'Data Platforms',
-    skills: ['Snowflake', 'Databricks', 'Apache Airflow'],
+    skills: ['Snowflake', 'Databricks', 'Apache Airflow', 'AWS Cost Explorer'],
   },
   {
     label: 'BI & Analytics',
-    skills: ['Power BI', 'Data Modeling', 'Process Improvement'],
+    skills: ['Power BI', 'Data Modeling', 'ETL Design'],
   },
   {
     label: 'Project Management',
-    skills: ['Agile / SCRUM', 'JIRA', 'Confluence', 'Backlog Grooming', 'Stakeholder Management'],
+    skills: ['Agile / SCRUM', 'JIRA Automation', 'Confluence', 'Backlog Grooming', 'Stakeholder Management'],
   },
 ];
 
