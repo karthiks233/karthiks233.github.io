@@ -29,6 +29,36 @@ const projects = [
     demo: 'https://posefit.net',
     demoLabel: 'Try it Live',
   },
+  {
+    title: 'Serverless Node.js on AWS ECS',
+    img: '/assets/DE.png',
+    description:
+      'Production-grade DevOps pipeline that containerizes a Node.js service and deploys it to AWS ECS Fargate — infrastructure provisioned with Terraform, config managed by Ansible, and zero-downtime rolling deploys via GitHub Actions CI/CD.',
+    tags: ['Docker', 'Terraform', 'Ansible', 'AWS ECS', 'AWS ECR', 'GitHub Actions'],
+    github: 'https://github.com/karthiks233/devops-nodejs-serverless-aws',
+    demo: 'https://github.com/karthiks233/devops-nodejs-serverless-aws',
+    demoLabel: 'View Repo',
+  },
+  {
+    title: 'Agentic Cloud Cost Optimizer',
+    img: '/assets/chatbot.jpeg',
+    description:
+      'AI agent that answers natural-language questions about AWS cloud spend using Google ADK and Gemini 2.5 Flash. Queries the AWS Cost Explorer API autonomously and maintains persistent conversation sessions via SQLite.',
+    tags: ['Python', 'Google ADK', 'Gemini 2.5', 'AWS boto3', 'SQLite'],
+    github: 'https://github.com/karthiks233/AWS_CostUsage_AgenticAI',
+    demo: 'https://github.com/karthiks233/AWS_CostUsage_AgenticAI',
+    demoLabel: 'View Repo',
+  },
+  {
+    title: 'Nginx Log Analyser',
+    img: '/assets/DE.png',
+    description:
+      'Zero-dependency Bash/AWK script that parses Nginx access logs and surfaces the top-5 IPs, most-requested paths, and most-common HTTP status codes — runs on any Unix system without installing anything.',
+    tags: ['Bash', 'AWK', 'Shell Scripting', 'DevOps'],
+    github: 'https://github.com/karthiks233/devops-nginx-logger',
+    demo: 'https://github.com/karthiks233/devops-nginx-logger',
+    demoLabel: 'View Repo',
+  },
 ];
 
 const Projects = () => (
