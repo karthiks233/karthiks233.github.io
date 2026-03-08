@@ -15,8 +15,8 @@ const projects = [
     description:
       'An end-to-end RAG platform over 15+ years of SEC 10-K filings for context-aware financial intelligence. Hybrid retrieval keeps hallucinations low, hitting sub-$0.02 per query at scale on AWS ECS.',
     tags: ['React', 'TypeScript', 'Python', 'FastAPI', 'AWS ECS', 'Kubernetes'],
-    github: 'https://github.com/karthiks233/H1B',
-    demo: 'https://github.com/karthiks233/H1B',
+    github: 'https://github.com/karthiks233/FinSights',
+    demo: 'https://github.com/karthiks233/FinSights',
     demoLabel: 'View Repo',
   },
   {
