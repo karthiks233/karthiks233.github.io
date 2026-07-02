@@ -34,13 +34,14 @@ const About = () => (
       <img src="/assets/1.jpeg" alt="Karthik Raja" className="about-photo" />
       <div className="about-bio">
         <h2>Karthik Raja</h2>
-        <p className="sub">Software &amp; Cloud Engineer</p>
+        <p className="sub">DevOps &amp; Cloud Engineer</p>
         <p>
           Curiosity-driven, first-principles engineer with roots in both hardware and software.
           Started building programs and mini-projects on Arduino and Raspberry Pi since 2017 — that
           foundation in embedded systems shapes how I think about every layer of the stack today.
-          Currently building full-stack cloud applications at Gold Star Foods on AWS with CDK, TypeScript,
-          and React.
+          Currently building full-stack cloud applications at Gold Star Foods on AWS — provisioning
+          infrastructure with CDK, automating CI/CD, and wiring production observability. AWS Certified
+          Solutions Architect – Associate.
         </p>
         <div className="about-stats">
           <div className="stat-card">
@@ -52,7 +53,7 @@ const About = () => (
             <div className="stat-label">Masters Degree</div>
           </div>
           <div className="stat-card">
-            <div className="stat-num">6</div>
+            <div className="stat-num">8</div>
             <div className="stat-label">Projects Shipped</div>
           </div>
           <div className="stat-card">
@@ -70,19 +71,21 @@ const About = () => (
       <p className="about-section-body" style={{ marginTop: '1rem' }}>
         My engineering path started with hardware — 2 years as an electronics engineering intern designing
         PCB circuits and writing C/C++ firmware for sensor systems. That grounding led me to Tata Consultancy
-        Services (TCS), where I spent 2 years as a network engineer monitoring remote router and IoT devices
-        at scale, writing Bash automation, and building dashboards to surface device health in real time.
+        Services (TCS), where I spent 2 years as a systems engineer administering production Linux across 500+
+        virtualized nodes, writing Python and Bash automation, and building log-parsing agents that cut incident
+        MTTR by 70%.
       </p>
       <p className="about-section-body" style={{ marginTop: '0.75rem' }}>
-        From networking I moved into product and process: a 6-month internship at American Family Insurance
-        managing their internal software lifecycle and automating design-to-development handoffs with Jira
-        Automation. Now at Gold Star Foods I'm building full-stack cloud applications on AWS — provisioning
-        infrastructure with CDK, building APIs in TypeScript, and shipping React interfaces used daily by
-        operations teams.
+        From there I moved deeper into the cloud: a Cloud Engineer internship at Homesite (American Family
+        Insurance) defining deployment requirements, hardening IAM, and driving CI/CD and Infrastructure-as-Code
+        adoption. Now at Gold Star Foods I'm building full-stack cloud applications on AWS — provisioning
+        infrastructure with CDK, automating GitHub Actions pipelines, and wiring CloudWatch/Sentry observability
+        for services used daily by operations teams.
       </p>
       <p className="about-section-body" style={{ marginTop: '0.75rem' }}>
-        Outside of work I apply the same systems thinking to personal projects in DevOps (Terraform, Ansible,
-        ECS), MLOps (MLflow, Airflow), and agentic AI — bridging the gap between infrastructure and intelligence.
+        Outside of work I apply the same systems thinking to personal DevOps projects — Terraform and Jenkins
+        GitOps on EKS, ArgoCD pull-based delivery, and HashiCorp Vault for dynamic secrets — bridging the gap
+        between infrastructure and intelligence.
       </p>
     </div>
 

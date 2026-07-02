@@ -40,6 +40,26 @@ const projects = [
     demoLabel: 'View Repo',
   },
   {
+    title: 'Cloud-Native AI Infrastructure Automation',
+    img: '/assets/project-3.png',
+    description:
+      'Highly available AWS infrastructure (VPC, EKS, S3) provisioned as code with Terraform for 100% config parity across Dev, Staging, and Production. A Jenkins GitOps CI/CD pipeline with automated testing and Terraform state locking cut deployment lead time 70% and eliminated drift, while Docker + Kubernetes (EKS) orchestrate build, test, and deploy across 5 services.',
+    tags: ['Terraform', 'AWS EKS', 'Jenkins', 'Docker', 'Kubernetes', 'GitOps'],
+    github: 'https://github.com/karthiks233',
+    demo: 'https://github.com/karthiks233',
+    demoLabel: 'View GitHub',
+  },
+  {
+    title: 'GitOps & Secrets Platform (Homelab)',
+    img: '/assets/DE.png',
+    description:
+      'Multi-environment Kubernetes platform standardized with reusable Helm charts (50–70% less manifest duplication). ArgoCD pull-based GitOps delivers self-healing deploys with drift correction every 3 min and sub-30s rollbacks; HashiCorp Vault (EKS IRSA) replaces static credentials with short-lived dynamic secrets, and Gitleaks + Semgrep gate every pull request.',
+    tags: ['Kubernetes', 'ArgoCD', 'Helm', 'HashiCorp Vault', 'Gitleaks', 'Semgrep'],
+    github: 'https://github.com/karthiks233',
+    demo: 'https://github.com/karthiks233',
+    demoLabel: 'View GitHub',
+  },
+  {
     title: 'Agentic Cloud Cost Optimizer',
     img: '/assets/chatbot.jpeg',
     description:

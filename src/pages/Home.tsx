@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const roles = ['Software', 'Data', 'AI', 'ML', 'Product', 'Analytical'];
+const roles = ['DevOps', 'Cloud', 'Software', 'Platform', 'Infrastructure', 'AI'];
 
 const Home = () => {
   const [roleIdx, setRoleIdx] = useState(0);
@@ -19,8 +19,8 @@ const Home = () => {
       <p className="hero-role"><span>{roles[roleIdx]}</span> Engineer</p>
       <div className="hero-actions">
         <a
-          href="/assets/Software_Resume.pdf"
-          download="Karthik_Software_Resume.pdf"
+          href="/assets/Karthik_Raja_Resume.pdf"
+          download="Karthik_Raja_Resume.pdf"
           className="btn btn-primary"
         >
           Download Resume
