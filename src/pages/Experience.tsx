@@ -1,33 +1,38 @@
 const workExperience = [
   {
-    role: 'Software Developer',
-    company: 'Gold Star Foods · Full-time',
-    period: 'Jan 2025 – Present',
+    role: 'Software Engineer',
+    company: 'Gold Star Foods · Full-time · LA, CA',
+    period: 'Jan 2026 – Present',
     bullets: [
-      'Building full-stack web applications on AWS using CDK (IaaC) with TypeScript and React.',
-      'Designing and provisioning cloud infrastructure — Lambda, API Gateway, DynamoDB, S3 — entirely through AWS CDK constructs.',
-      'Developing reusable React component libraries and TypeScript APIs for internal tooling and operational dashboards.',
+      'Shipped 5+ full-stack features end-to-end powering procurement and demand-forecasting workflows on an agentic food-distribution platform, built across TypeScript, React, Express, Prisma, and AWS CDK.',
+      "Cut Text-to-SQL chatbot query-generation latency by 40% using AWS Bedrock's Converse API with tool-use calls and knowledge-graph prompt injection, enforcing guardrails at the prompt and query-validation layers.",
+      'Automated the dev deployment path from 30-minute to 5-minute zero-touch deploys with a GitHub Actions CI/CD pipeline — build, lint, and type-check gates plus gated manual approval for production.',
+      'Authored production runbooks for 5+ microservices across Docker, PostgreSQL, and AWS ECS, standardizing incident response and cutting new-developer onboarding time by ~30%.',
+      'Wired CloudWatch and Sentry metrics, structured logs, and alarms across services — 10 dashboards & alarms driving 60% faster incident detection.',
     ],
   },
   {
-    role: 'Process Improvement Intern',
-    company: 'American Family Insurance · Internship',
-    period: 'Jun 2024 – Dec 2024',
+    role: 'Cloud Engineer Intern',
+    company: 'Homesite (American Family Insurance) · Internship · Boston, MA',
+    period: 'May 2024 – Dec 2024',
     bullets: [
-      'Managed internal software product lifecycle using SDLC workflows across cross-functional engineering and design teams.',
-      'Automated design-to-development handoffs using Jira Automation, reducing manual coordination overhead by ~40%.',
-      'Facilitated sprint ceremonies and maintained Confluence documentation for product teams of 15+ stakeholders.',
+      'Maintained 99.9% uptime for real-time analytics and batch-processing pipelines by defining technical deployment requirements for cloud workloads.',
+      'Strengthened security posture with least-privilege IAM policies and orchestrated cloud resource allocation for engineering squads.',
+      'Drove self-service tooling adoption and a 20% delivery-efficiency gain by leading CI/CD and Infrastructure-as-Code demos across squads.',
+      'Partnered with SRE teams in JIRA-driven Agile ceremonies, aligning product backlogs with platform scalability goals for a 75% sprint-predictability gain.',
+      'Reduced cloud spend ~20% by right-sizing compute and storage and flagging idle resources in recurring cost reviews.',
     ],
   },
   {
-    role: 'Network Engineer',
-    company: 'Tata Consultancy Services (TCS) · Full-time',
-    period: 'Jun 2021 – May 2023',
+    role: 'Systems Engineer',
+    company: 'Tata Consultancy Services (TCS) · Full-time · Bangalore, India',
+    period: 'Aug 2021 – Aug 2023',
     bullets: [
-      'Monitored remote router and IoT devices at scale using Bash scripts and cron-based alerting pipelines.',
-      'Built real-time performance and status dashboards to surface device health metrics for operations teams.',
-      'Automated log parsing and alert triage across distributed network infrastructure, reducing mean time to detect issues.',
-      'Developed and maintained ETL pipelines integrating Snowflake and Databricks for network telemetry data processing.',
+      'Administered production Linux (Amazon Linux, RHEL) environments, sustaining 99.9% uptime across 500+ virtualized telecom nodes.',
+      'Eliminated ~30% of operational toil with Python and Shell self-service tooling for log ingestion, system patching, and routine maintenance.',
+      'Cut infrastructure-incident MTTR by 70% by engineering log-parsing agents that auto-detected faults across distributed networking devices.',
+      'Improved successful production-deployment rate by 15% by optimizing the Agile release pipeline with JIRA automation and Git version control.',
+      'Reduced on-call escalations 30% by authoring standardized runbooks and troubleshooting guides.',
     ],
   },
   {
@@ -43,28 +48,44 @@ const workExperience = [
 
 const skillGroups = [
   {
-    label: 'Cloud & Infrastructure',
-    skills: ['AWS CDK', 'AWS Lambda', 'API Gateway', 'DynamoDB', 'S3', 'ECS', 'ECR', 'Terraform', 'Ansible'],
+    label: 'Cloud',
+    skills: ['AWS EKS', 'EC2', 'S3', 'IAM', 'VPC', 'CloudWatch', 'Google Cloud (GKE)'],
   },
   {
-    label: 'DevOps & MLOps',
-    skills: ['Docker', 'GitHub Actions', 'MLflow', 'CI/CD Pipelines'],
+    label: 'CI/CD & GitOps',
+    skills: ['GitHub Actions', 'Jenkins', 'ArgoCD', 'Helm', 'GitOps'],
   },
   {
-    label: 'Languages & Frameworks',
-    skills: ['TypeScript', 'Python', 'React', 'Node.js', 'Bash', 'SQL', 'PySpark'],
+    label: 'IaC & Config',
+    skills: ['Terraform', 'Ansible'],
   },
   {
-    label: 'Data Platforms',
-    skills: ['Snowflake', 'Databricks', 'Apache Airflow', 'AWS Cost Explorer'],
+    label: 'Containers & Orchestration',
+    skills: ['Docker', 'Kubernetes (EKS)', 'Helm'],
   },
   {
-    label: 'BI & Analytics',
-    skills: ['Power BI', 'Data Modeling', 'ETL Design'],
+    label: 'Security & Secrets',
+    skills: ['IAM (least-privilege)', 'HashiCorp Vault', 'Gitleaks', 'Semgrep', 'OIDC / SAML'],
   },
   {
-    label: 'Project Management',
-    skills: ['Agile / SCRUM', 'JIRA Automation', 'Confluence', 'Backlog Grooming', 'Stakeholder Management'],
+    label: 'Observability',
+    skills: ['Prometheus', 'Grafana', 'Sentry', 'CloudWatch'],
+  },
+  {
+    label: 'Languages',
+    skills: ['Python', 'Bash', 'PowerShell', 'Java', 'C', 'SQL'],
+  },
+  {
+    label: 'Databases & OS',
+    skills: ['MySQL', 'PostgreSQL', 'Linux (Amazon Linux, Ubuntu, RHEL)', 'Windows Server'],
+  },
+  {
+    label: 'Networking',
+    skills: ['TCP/IP', 'DNS', 'DHCP', 'VPC', 'Load Balancers', 'NAT'],
+  },
+  {
+    label: 'Certifications',
+    skills: ['AWS Certified Solutions Architect – Associate'],
   },
 ];
 
